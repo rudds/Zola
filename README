@@ -1,0 +1,6 @@
+使用ライブラリ：jmdns-3.4.1
+
+
+実行方法：
+Zola/binの階層で以下のように実行してください
+java -classpath .:../jmdns-3.4.1/lib/jmdns.jar Zola
