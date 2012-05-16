@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="SJIS"?>
+<project>
+	<!-- propertyタグで変数compileを設定 -->
+	<property name="compile" value="bin"/>
+	
+	<!-- -->
+	<target name="directory">
+		<mkdir dir="${compile}"/>
+	</target>
+	
+	<target name="compile" depends="directory">
+		<javac
+		srcdir="src"
+		destdir="${compile}"
+		excludes="build.xml"
+		/>
+	</target>
+</project>
