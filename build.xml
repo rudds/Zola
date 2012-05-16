@@ -1,16 +1,16 @@
-<?xml version="1.0" encoding="SJIS"?>
-<project>
-	<!-- propertyタグで変数compileを設定 -->
-	<property name="compile" value="bin"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Zola" default="compile" basedir=".">
+
+	<property name="source" value="./src/jp/ac/kyoto_su/rudds/zola"/>
+	<property name="compile" value="./bin"/>
 	
-	<!-- -->
 	<target name="directory">
 		<mkdir dir="${compile}"/>
 	</target>
 	
 	<target name="compile" depends="directory">
 		<javac
-		srcdir="src"
+		srcdir="${source}"
 		destdir="${compile}"
 		excludes="build.xml"
 		/>
